@@ -24,7 +24,7 @@ app.use(express.json());
 // ENVIRONMENT VARIABLES
 // -----------------------------
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-const OPENAI_MODEL = "gpt-4o-mini"; // safe small model; change if desired
+const OPENAI_MODEL = "gpt-4.1-mini"; // updated model
 
 const NUTRITIONIX_APP_ID = process.env.NUTRITIONIX_APP_ID;
 const NUTRITIONIX_APP_KEY = process.env.NUTRITIONIX_APP_KEY;
@@ -178,3 +178,4 @@ app.get("/api/nutritionix/barcode/:upc", async (req, res) => {
 // -----------------------------
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+
